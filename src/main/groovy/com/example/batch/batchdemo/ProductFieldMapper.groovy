@@ -9,7 +9,7 @@ class ProductFieldMapper implements FieldSetMapper<Product> {
     @Override
     Product mapFieldSet(FieldSet fieldSet) throws BindException {
         Product product = new Product()
-        product.setId(fieldSet.readString("productid"))
+        product.setProductId(fieldSet.readString("productid"))
         product.setName(fieldSet.readString("name"))
         product.setDescription(fieldSet.readString("description"))
         product.setPrice(fieldSet.readString("price"))
